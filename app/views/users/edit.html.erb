@@ -1,0 +1,13 @@
+<h1>Editing User #<%= @user.id %></h1>
+
+<form action="/users/<%= @user.id %>/update">
+  <div>
+    <label for="idea">idea</label><br />
+    <input id="idea" name="idea" value="<%= @user.idea  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+</form>
+
+
